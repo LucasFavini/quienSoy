@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LucasFavini</title>
+
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand navbar-light" id="menuNav">
+
+        <div class="collapse navbar-collapse" id="mainNav">
+
+            <ul class="navbar-nav nav-fill">
+
+                <li class="nav-item" id="x1">
+                    <a class="nav-link" href="index.html" target="STAT">STAT</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="inv.html">INV</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">/////</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="map.html">MAP</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html">ABOUT</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <ul class="nav nav-tabs" id="subMenu">
+
+        <li class="nav-item" class="itemx">
+            <a href="#weapons" class="nav-link active" data-toggle="tab" role="tab">Weapons</a>
+
+        </li>
+
+        <li class="nav-item">
+            <a href="#armor" class="nav-link" data-toggle="tab" role="tab">Armor</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#items" class="nav-link" data-toggle="tab" role="tab">Item</a>
+        </li>
+
+    </ul>
+
+    <div class="tab-content">
+
+        <div role="tab" class="tab-pane active" id="weapons">
+
+           <ul class="item-list">
+               <li><a href="#" class="44_pistol">44.Pistol</a></li>
+               <li><a href="#" class="10mm_pistol">10mm.Pistol</a></li>
+               <li><a href="#" class="assault_rifle">Assault Rifle</a></li>
+               <li><a href="#" class="shotgun">Shotgun</a></li>
+               <li><a href="#" class="sniper_rifle">Sniper-Rifle</a></li>
+           </ul>
+
+        <img id="wMenu" src="images/wMenu.png"/>
+
+           <div class="item-stats">
+             <div class="row-highlight">
+                <div class="row" id="wstats">
+                    <div class="col-12">
+                        <div class="left">Damage</div> 
+                        <div class="right"  id="damage">--</div>                    
+                    </div>
+                  
+                    <div class="col-12">                        
+                        <div class="left">FireRate</div> 
+                        <div class="right" id="firerate">--</div>                    
+                    </div>
+
+                    <div class="col-12">
+                        <div class="left">Range</div> 
+                        <div class="right" id="range">--</div>                    
+                    </div>
+
+                    <div class="col-12">
+                        <div class="left">Accuracy</div> 
+                        <div class="right" id="accuracy">--</div>                    
+                    </div>
+
+                    <div class="col-12">
+                        <div class="left">Weight</div> 
+                        <div class="right" id="weight">--</div>                    
+                    </div>
+
+                    <div class="col-12">
+                        <div class="left">Value</div> 
+                        <div class="right" id="value">--</div>                    
+                    </div>
+                    
+
+                 </div>                
+                </div>
+         </div>        
+         </div>
+         
+        <div role="tab" class="tab-pane" id="armor">
+
+               <li><a href="#" class="bronce">Bronce Shield</a></li>
+               <li><a href="#" class="silver">Silver Shield</a></li>
+               <li><a href="#" class="gold">Gold Shield</a></li>
+               <li><a href="#" class="platinum">Platinum Shield</a></li>      
+                
+        
+
+                <img class="aMenu" src="images/shield2.png">
+                
+              
+               
+
+            
+               <div class="item-stats">
+                <div class="row-highlight">
+                    <div class="row" id="aStats">
+                        <div class="col-12">
+                            <div class="left">Protection</div> 
+                            <div class="right"  id="protection">--</div>                    
+                        </div>
+                      
+                        <div class="col-12">                        
+                            <div class="left">Repairs</div> 
+                            <div class="right" id="repairs">--</div>                    
+                        </div>
+    
+                        <div class="col-12">
+                            <div class="left">Value</div> 
+                            <div class="right" id="Value">--</div>                    
+                        </div>
+       
+                     </div>                
+                </div>
+             </div>
+          
+        </div>
+
+        
+
+        <div role="tab" class="tab-pane" id="items">
+
+            <div role="tab" class="tab-pane active" id="weapons">
+
+                <ul class="item-list">
+                    <li><a href="#" class="shotgun_bullets">Shotgun Ammo</a></li>
+                    <li><a href="#" class="sniper_bullets">Sniper Ammo</a></li>
+                    <li><a href="#" class="empty">Empty</a></li>                   
+                    <li><a href="#" class="empty">Empty</a></li>
+                    <li><a href="#" class="empty">Empty</a></li>
+                </ul>     
+
+                <div class="box-display">  
+                    <img class="shotgun_ammo"  src="images/shotgun-ammo.png"> 
+                    <img class="sniper_ammo" src="images/sniper-ammo.png">   
+                   
+                </div>
+
+                <div class="item-stats">
+                    <div class="row-highlight">
+                       <div class="row" id="wstats">
+                           <div class="col-12">
+                               <div class="left">Quantity</div> 
+                               <div class="right"  id="quantity">--</div>                    
+                           </div>
+                         
+                           <div class="col-12">                        
+                               <div class="left">Weight</div> 
+                               <div class="right" id="weighT">--</div>                    
+                           </div>
+       
+                           <div class="col-12">
+                               <div class="left">Status</div> 
+                               <div class="right" id="statuS">--</div>                    
+                           </div>
+       
+                           <div class="col-12">
+                               <div class="left">Value</div> 
+                               <div class="right" id="valuE">--</div>                    
+                           </div>
+       
+                        
+                       
+                           
+       
+                        </div>                
+                       </div>
+                </div>        
+ 
+           
+
+        </div>
+    </div>
+
+   
+
+
+    <nav class="navbar navbar-light pip-footer" >
+ 
+        <div class="col">HP 100/100</div>
+        <div class="col-4">level 7
+            <div class="level-progress">
+                <div class="level-progress-indicator"></div>
+            </div>
+        </div>
+        <div class="col"><span>AP 50/50</span></div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <script src="Bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="Bootstrap/js/myScript.js"></script>
+    <script src="Bootstrap/js/perks.js"></script>
+    
+
+
+</body>
+
+</html>

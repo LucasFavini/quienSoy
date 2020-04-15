@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
+
+body
+{
+    font-family: "Oxygen Mono";
+    color: #14fe17;
+    background-color: #272b23;
+}
+
+body::after
+{
+    height: 100%;
+    width: 100%;
+    content: "";    
+    position: absolute;
+    top: 0px;   
+    left: 0px;
+    pointer-events: none; /* Para interctauar en la pag*/
+    background: repeating-linear-gradient(0deg ,rgba(0,0,0,.5), transparent 2px) /* Efecto Retro decidir opacity .3*/
+    
+}
+
+.navbar
+{
+    border-bottom: 2px solid;
+    margin: 5px 10px;
+    
+}
+
+.navbar::before, .navbar::after
+{
+    height: 10px;
+    width: 2px;
+    position: absolute;
+    display: block;
+    content: "";
+    z-index: 1000;
+    background: #14fe17; 
+    bottom:-10px;   /* decidir si los palitos miran para arriba o abajo */
+}
+.navbar::before{left: 0px;}
+.navbar::after{right: 0px;}
+
+.navbar-nav
+{
+    width: 100%;
+   
+}
+
+.navbar-light ul.navbar-nav >li
+{
+    display: block;
+    position: relative;
+    width: 100%;    
+    
+}
+
+#mainNav a
+{
+    color: #14fe17;
+    width: 100%;
+    font-size: 32px;
+    line-height: 2px; 
+    z-index: 50;
+    position: relative;    
+}
+
+
+#mainNav .nav-item.active::before
+{
+    content: "";
+    position: absolute;  
+    width: 50%;
+    height: 22px;   
+    top: 22%;
+    left: 25%;    
+    border-left: 2px solid;  
+    border-right: 2px solid;
+      
+}
+
+
+
+#subMenu{margin: 0px 15px; border-bottom: none;}
+#subMenu > li :hover{ color: #14fe17;}
+.nav-tabs .nav-link:hover{border: 1px solid #14fe17;}/*VEEER*/
+
+ul>li>a
+{
+    color: #14fe17;
+}
+
+
+
+.center-image img
+{
+    
+    position: relative;
+    margin: auto; 
+    margin-top: -3%;   
+    display: block;    
+    height: 5%;
+    filter: grayscale(1) sepia(100) hue-rotate(55deg) saturate(7) brightness(1) contrast(2); /*saturate le da el color unico de pantalla */
+
+}
+
+.pip-footer
+{
+    position: fixed;
+    bottom: 5px;
+    width: calc(100% - 20px) ;
+    margin: 10px;
+}
+.pip-footer span {position: relative; left: 50%;}
+
+.level-progress
+{
+    width: 60%;
+    display: inline-block;
+    height: 10px;
+    border: 1px solid;
+}
+
+.level-progress-indicator
+{
+    background-color: green;
+    width: 47%;
+    height: 8px;
+}
+
+.icon-bg-weapon
+{
+    position: absolute;
+    top: 30%;   
+    left: 30%;   
+    background-color: green;
+    border-radius: 5%;
+    width: 4%;
+   
+}
+
+.icon-bg-weapon img
+{
+   width: 100%;
+   filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);
+}
+
+.crosshair
+{
+    position: absolute;
+    top: 30%;   
+    left: 35%;   
+    background-color: green;  
+    border-radius: 5%;  
+    width: 2%;
+    text-align: center;
+    
+}
+.crosshair img{ width: 100%; filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);}
+
+
+.icon-bg-armor
+{   
+    position: absolute;
+    top: 50%;   
+    left: 30%;   
+    background-color: green;
+    border-radius: 7%;
+    width: 4.3%;
+}
+.icon-bg-armor img{ width: 100%; filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);}
+
+.nuclear
+{
+    position: absolute;
+    display: block;
+    top: 50%;   
+    left: 35%;   
+    background-color: green;  
+    border-radius: 5%;  
+    width: 5%;
+    text-align: center;
+}
+.nuclear-icon
+{
+    display: inline-block;
+    width: 40%; 
+    filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);
+}
+
+.shield 
+{
+    position: absolute;   
+    display: block;
+    top: 55%;   
+    left: 35%;   
+    background-color: green;  
+    border-radius: 5%;  
+    width: 5%;
+    text-align: center;
+}
+.shield img
+{
+    display: inline-block;
+    width: 40%;
+    filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);
+    
+}
+
+#map
+{
+   
+    position: relative;
+    width: 65%;   
+    filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);
+}
+
+#location-icon
+{
+    display: block;  
+    margin-top: -13%;
+    margin-left: 35%;
+    width: 3%;
+    filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(3); 
+}
+
+
+.item-list li
+{
+    list-style:none;
+    padding: 2%;   
+
+
+}
+
+.item-list a
+{
+    padding: 5px 20px;              
+}
+
+.item-list li a:hover
+{
+    text-decoration: none;
+    color: #14fe17;
+    background-color: green;
+}
+
+.item-list li a.active::before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 13px;
+    background: green;
+    margin-top: 5px;
+}
+
+
+
+
+#wstats
+{
+    left: 70%;
+    position: absolute;
+    top: 50%;
+    width: 20%;
+    background: green;
+}
+
+#wstats .col-12
+{
+  padding: 5px 10px;
+  border: 1px solid #272b23;
+}
+
+
+#aStats
+{
+    left: 73%;
+    position: absolute;
+    top: 40%;
+    width: 20%;
+    background: green;
+}
+
+#aStats .col-12
+{ 
+    border: 1px solid #272b23;
+    background: green;
+    padding: 10px 10px;  
+}
+
+
+
+.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+
+#wMenu
+{
+    position: absolute;
+    width: 35%;
+    top: 15%;
+    left: 25%;
+    filter: grayscale(1) sepia(100) hue-rotate(55deg) saturate(7) brightness(1) contrast(2);   
+    
+}
+
+.aMenu
+{
+    position: absolute;
+    width: 25%;
+    top: -10%;
+    left: 33%;
+    filter: grayscale(1) sepia(100) hue-rotate(55deg) saturate(12) brightness(8) contrast(1);         
+}
+
+.broncE{filter: grayscale(1) sepia(100) hue-rotate(55deg) saturate(12) brightness(1) contrast(1);}
+.silveR{filter: grayscale(1) sepia(100) hue-rotate(55deg) saturate(12) brightness(2) contrast(1);}
+.golD{filter: grayscale(1) sepia(100) hue-rotate(55deg) saturate(12) brightness(4) contrast(1);}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+{
+    background-color: green;
+    border-color: #14fe17;
+    color: #14fe17;
+}
+
+#armor
+{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    margin-top: 5%;  
+}
+
+
+#armor li a
+{
+    display: block;
+    width: 15%;
+    text-align: center;
+    text-decoration: none;
+    color: #14fe17;
+    margin: 5%;   
+    padding: 5px 5px;   
+}
+
+#armor li a:hover
+{
+    background-color: green;
+}
+
+#armor a.active
+{
+    background-color: green;
+}
+
+.box-display
+{   
+    position: absolute;
+    height: 45%;
+    width: 25%;
+    top: 25%;
+    left: 32%;
+    background: #272b23;    
+    border-radius: 2%;
+    opacity: .5;
+}
+
+.shotgun_ammo
+{
+    display: none;
+    margin: auto;
+    margin-top: 8%;
+    opacity: .7;
+}
+
+.sniper_ammo
+{
+    display: none;
+    margin: auto;
+    margin-top: 8%;
+    opacity: .7;
+    width: 100%;
+}
+
+.item-list2 li
+{
+    list-style:none;
+    padding: 2%;  
+    text-align: center;   
+    width: 15%;
+    margin-left: -2%;
+
+
+}
+
+.item-list2 a
+{
+    padding: 5px 20px;  
+              
+}
+
+.item-list2 li a:hover
+{
+    text-decoration: none;
+    color: #14fe17;
+    background-color: green;
+}
+
+.myperks
+{
+    display: none;
+    position: absolute;
+    width: 45%;
+    left: 30%;
+    top: 25%;
+    filter: grayscale(1) sepia(100) hue-rotate(55deg) saturate(7) brightness(1) contrast(2);
+}
+
+h3
+{
+    margin-top: 12%;
+    margin-left: 38%;
+    color: red;
+}
+
+#miPresentacion
+{   
+    margin-top: 5%;
+    margin-left: 17%;
+    width: 65%;
+}
+
+#iconsL img
+{
+    margin-left: 2%;
+  
+  
+}

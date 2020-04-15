@@ -1,0 +1,18 @@
+#todo
+{
+    margin: auto;
+}
+
+#formularioEjemplo
+{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    font: bold;
+    font-size: large;
+}
+
+option
+{
+    text-align: center;
+}
