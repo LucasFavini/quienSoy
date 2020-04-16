@@ -442,6 +442,23 @@ h3
 #iconsL img
 {
     margin-left: 2%;
-  
-  
+    
+}
+
+#gotoAbout
+{
+    position: absolute ;
+    left: 65%;
+    top: 35%;
+}
+
+#gotoAbout a
+{
+   text-decoration: none;
+   color: green;
+}
+
+#gotoAbout a:hover
+{
+ background-color: whitesmoke;
 }
