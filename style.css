@@ -464,10 +464,14 @@ h3
  background-color: whitesmoke;
 }
 
-@media screen and (max-width: 400px){
+#mediaAnuncio
+{
+    font-size: 8px;
+}
+
+@media screen and (max-width: 500px){
     
-      
-    
+          
     .totalidad img{
             width: 100%;
             height: auto;         
