@@ -5,6 +5,7 @@ body
     font-family: "Oxygen Mono";
     color: #14fe17;
     background-color: #272b23;
+  
 }
 
 body::after
@@ -13,8 +14,8 @@ body::after
     width: 100%;
     content: "";    
     position: absolute;
-    top: 0px;   
-    left: 0px;
+    top: 0%;   
+    left: 0%;
     pointer-events: none; /* Para interctauar en la pag*/
     background: repeating-linear-gradient(0deg ,rgba(0,0,0,.5), transparent 2px) /* Efecto Retro decidir opacity .3*/
     
@@ -106,7 +107,7 @@ ul>li>a
 
 .pip-footer
 {
-    position: fixed;
+    position: absolute;
     bottom: 5px;
     width: calc(100% - 20px) ;
     margin: 10px;
@@ -461,4 +462,14 @@ h3
 #gotoAbout a:hover
 {
  background-color: whitesmoke;
+}
+
+@media screen and (max-width: 400px){
+    .totalidad img{
+            width: 100%;
+            height: auto;         
+    }
+    aside{
+        display: none;
+    }
 }
