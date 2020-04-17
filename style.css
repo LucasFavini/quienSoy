@@ -471,6 +471,12 @@ h3
 
 @media screen and (max-width: 500px){
     
+    
+
+    #menuNav a
+    {
+       font-size: 15px;
+    }
           
     .totalidad img{
             width: 100%;
@@ -508,6 +514,11 @@ h3
         height: auto;
         top: 60%;
         left: 27%; 
+    }
+
+    #gotoAbout
+    {
+        font-size: 15px;
     }
 
 
