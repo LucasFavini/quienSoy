@@ -465,10 +465,48 @@ h3
 }
 
 @media screen and (max-width: 400px){
+    
+      
+    
     .totalidad img{
             width: 100%;
             height: auto;         
     }
+
+    .icon-bg-weapon{
+        width: 10%;
+        height: auto;
+        left: 15%;         
+}
+    .crosshair {
+            width: 8%;
+            height: auto;
+            left: 27%;         
+    }
+
+    .icon-bg-armor{
+        width: 10%;
+        height: auto;
+        left: 15%;  
+    }
+
+    .nuclear
+    {
+        width: 8%;
+        height: auto;
+        left: 27%; 
+    }
+
+    .shield
+
+    {
+        width: 8%;
+        height: auto;
+        top: 60%;
+        left: 27%; 
+    }
+
+
     aside{
         display: none;
     }
