@@ -529,9 +529,8 @@ h3
 
     #location-icon
     {
-        position: absolute;
-        top: 44%;
-        left: -7%;
+        margin-top: -15%;
+        margin-left: 28%;
     }
 
     p
@@ -539,10 +538,9 @@ h3
         font-size: 10px;
     }
 
-    h4
+    h4,h3
     {
-        font-size: 10px;
-        height: auto;
+        font-size: 10px;      
     }
 
     #iconsL img
@@ -553,6 +551,9 @@ h3
     
     #wstats
     {
+        position: absolute;
+        left: 20%;
+        width: 30%;
         font-size: 10px;
     }
 
@@ -561,12 +562,14 @@ h3
         width: 60%;
         height: auto;
         pointer-events: none;
-        left: 36%;   
+        left: 36%; 
+        top: 23%;  
     }
 
     #weapons ul
     {       
-        font-size: 10px;        
+        font-size: 10px;   
+        margin-left: -5%;     
     }
 
     .aMenu 
@@ -577,6 +580,7 @@ h3
 
     #aStats
     {
+      width: 24%;  
       font-size: 10px;
       text-align: left;
     }
@@ -584,7 +588,18 @@ h3
     .box-display img
     {
         width: 100%;
-        height: auto;
+        position: absolute;
+        left: 35%;
+    
+    }
+
+    #special img
+    {
+     position: absolute;
+     top: 45%; 
+     left: 12%;  
+     width: 80%;
+     height: auto;
     }
 
     aside{
