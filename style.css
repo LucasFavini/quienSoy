@@ -472,7 +472,6 @@ h3
 @media screen and (max-width: 500px){
     
     
-
     #menuNav a
     {
        font-size: 15px;
@@ -589,7 +588,7 @@ h3
     {
         width: 100%;
         position: absolute;
-        left: 35%;
+        left: 40%;
     
     }
 
